@@ -1,0 +1,25 @@
+Example for switch
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    switch(a){
+        case 1:
+            printf("java");
+            break;
+        case 2:
+            printf("python");
+            break;
+        case 3:
+            printf("C");
+            break;
+        default:
+            printf("Invalid");
+    }
+    return 0;
+}
+output:
+1
+java
