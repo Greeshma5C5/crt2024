@@ -1,0 +1,19 @@
+Read a number and print even or odd
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    if (a%2==0)
+    {
+       printf("Even number\n");
+    }
+    else{
+        printf("Odd number");
+    }
+    return 0;
+}
+
+output:
+19
+odd number
