@@ -1,0 +1,15 @@
+Print the series 5,10,15,20,25,30,......,n
+
+#include <stdio.h>
+int main() {
+    int n,i,sum=0;
+    scanf("%d",&n);
+    for(i=0;i<=n;i++){
+        sum=sum+5;
+    printf("%d ",sum);
+    }
+    return 0;
+}
+Output:
+5
+5 10 15 20 25 30 
