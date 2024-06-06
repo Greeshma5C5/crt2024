@@ -1,0 +1,17 @@
+Read a no and print Factorial value of a given no.
+#include <stdio.h>
+
+int main() {
+    int n,x=1;
+    scanf("%d",&n);
+    while(n>=1){
+        x=n*x;
+        n=n-1;
+    }
+    printf("%d",x);
+
+    return 0;
+}
+Output:
+6
+720
