@@ -1,0 +1,22 @@
+Read 3 digit no. and print no is Armstrong no or not
+#include <stdio.h>
+int main() {
+    int n,d,t,s=0;
+    scanf("%d",&n);
+    t=n;
+    while(n>0){
+        d=n%10;
+        n=n/10;
+        s=s+d*d*d;
+    }
+    if(s==t){
+            printf("Armstrong number");
+    }
+    else{
+             printf("Not Armstrong Number");
+    }
+    return 0;
+}
+output:
+153
+armstrong number
