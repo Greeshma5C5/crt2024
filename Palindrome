@@ -1,0 +1,23 @@
+Read a no and print no is palindrome or not.
+#include <stdio.h>
+int main() {
+    int n,d,r=0,t;
+    scanf("%d",&n);
+    t=n;
+    while(n>0){
+        d=n%10;
+        n=n/10;
+        r=r*10+d;
+    }
+    if(r==t){
+            printf("palindrome");
+    }
+    else{
+             printf("Not palinrome");
+    }
+
+    return 0;
+}
+output:
+121
+palindrome
