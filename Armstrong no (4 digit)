@@ -36,3 +36,31 @@ Sample Input 3
 Sample Output 3
 
 Yes
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,t,s=0,d;
+    scanf("%d",&n);
+    int c=log10(n)+1;
+    t=n;
+    while(n>0){
+        d=n%10;
+        //n=n/10;
+        //s=s+d*d*d;
+        s=s+pow(d,c); 
+        n=n/10;
+    }
+    if(s==t){
+    printf("Yes");
+    }
+    else{
+    printf("No");
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
