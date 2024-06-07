@@ -1,0 +1,38 @@
+Continue Example.
+#include <stdio.h>
+
+int main() {
+    int i,n;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        printf("%d\n",i);
+        if(i==2)
+            continue;
+        printf("Sai\n");
+    }
+    
+
+    return 0;
+}
+ouput:
+10
+0
+Sai
+1
+Sai
+2
+3
+Sai
+4
+Sai
+5
+Sai
+6
+Sai
+7
+Sai
+8
+Sai
+9
+Sai
+
