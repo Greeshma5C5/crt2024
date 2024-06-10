@@ -1,0 +1,18 @@
+Head Recursion
+#include<stdio.h>
+void fn(int n){
+    if(n>=1){
+        fn(n-1);
+        printf("%d\n",n);
+    }
+}
+int main(){
+    int n;
+    scanf("%d",&n);
+    fn(n);
+}
+output:
+3
+1
+2
+3
