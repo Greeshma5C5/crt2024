@@ -1,0 +1,18 @@
+Area claculation using No arguments and no return values method
+
+#include <stdio.h>
+int area (){
+    int a,b;
+    scanf("%d%d",&a,&b);
+    int r=a*b;
+    printf("%d",r);
+    
+}
+int main() {
+    area();
+    return 0;
+}
+
+output:
+1 2
+2
