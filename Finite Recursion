@@ -1,0 +1,19 @@
+Finite Recursion
+#include<stdio.h>
+void fn(int c){
+    if(c<=5){
+       printf("Good Morning\n");
+       fn(c+1);
+    }
+}
+int main(){
+    int c=1;
+    fn(c);
+}
+output:
+Good Morning
+Good Morning
+Good Morning
+Good Morning
+Good Morning
+
