@@ -1,0 +1,19 @@
+Area calculation using No arguments with return value method.
+#include <stdio.h>
+int area (){
+    int a,b;
+    scanf("%d%d",&a,&b);
+    int r=a*b;
+    //printf("%d",r);
+    return r;
+    
+}
+int main() {
+    int k=area();
+    printf("%d",k);
+    return 0;
+}
+
+output:
+1 2 
+2
