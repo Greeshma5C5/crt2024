@@ -1,0 +1,9 @@
+Infinite Recursion
+#include<stdio.h>
+void fn(){
+      printf("Good Morning\n");
+      fn();
+}
+int main(){
+    fn();
+}
