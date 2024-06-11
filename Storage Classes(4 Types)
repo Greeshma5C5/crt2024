@@ -1,0 +1,61 @@
+1 . Automatic variable Example
+#include <stdio.h>
+int main() {
+int a=1;
+{
+    int a=2;
+    {
+        int a=3;
+        printf("%d ",a);
+    }
+    printf("%d ",a);
+}
+printf("%d",a);
+return 0;
+}
+output:
+3 2 1
+
+
+2 . External variable Example
+#include <stdio.h>
+int a;
+void increment(){
+    a++;
+    printf("%d ",a);
+}
+int main(){
+    printf("%d ",a);
+    increment();
+    increment();
+}
+output:
+0 1 2
+
+
+3. Static Variables
+#include <stdio.h>
+void increment(){
+    static int a=1;
+    printf("%d ",a);
+    a++;
+}
+int main(){
+    increment();
+    increment();
+    increment();
+}
+output:
+1 2 3
+
+
+4 . Register variables
+#include <stdio.h>
+int main(){
+    int i;
+    for(i=1;i<=1000;i++){
+        printf("%d ",i);
+    }
+}
+output:
+1 2 3 4 5 6 ....................1000
