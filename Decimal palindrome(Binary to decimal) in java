@@ -1,0 +1,33 @@
+Decimal palindrome
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int i=1,d,d1,r=0,t=0;
+        while(n!=0){
+            d=n%2;
+            r=r+d*i;
+            n=n/10;
+            i=i*2;
+        }
+        System.out.println(r);
+        int k=r;
+        while(r!=0){
+            d1=r%10;
+            r=r/10;
+            t=t*10+d1;
+        }
+        if(t==k){
+            System.out.println("yes");
+        }
+        else{
+             System.out.println("No");
+        }
+    }
+}
+output:
+1111001
+121
+yes
+
