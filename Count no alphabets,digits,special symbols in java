@@ -1,0 +1,32 @@
+Read a string and print no of alphabets,no of uppercase,no of lower case,digits and special symbols.
+import java.util.*;
+class StringAlpha {
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+       String s1=s.nextLine();
+       //char s2=s1.toCharArray();
+       int a=0,u=0,l=0,d=0,ss=0;
+for(int i=0;i<s1.length();i++){
+       char ch=s1.charAt(i);
+       if(Character.isLetter(ch)){
+               a++;
+               if(Character.isUpperCase(ch))
+                     u++;
+               else
+                      l++;
+       }
+       else if(Character.isDigit(ch)){ 
+                 d++;
+        }
+       else{
+                 ss++;
+      }  
+}
+System.out.print(a+" "+u+" "+l+" "+d+" "+ss); 
+
+}
+}
+
+output:
+sdfghjkl#$%^&*()_2345678sdfghj
+14 0 14 7 9
