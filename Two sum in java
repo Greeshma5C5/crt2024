@@ -1,0 +1,34 @@
+Given an array find the indices of 2 elements whose sum is equal to the given sum. If there exist multiple solutions ,print the minimum indices
+input:
+9
+1 3 4 5 7 10 11 19 20
+7
+output:
+1 2
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a[]=new int[n];
+        int i,j;
+        for(i=0;i<n;i++){
+            a[i]=s.nextInt();
+        }
+        int t=s.nextInt();
+        int c=0;
+        for(i=0;i<n-1;i++){
+            for(j=i+1;j<n;j++){
+                int r=a[i]+a[j];
+                if(t==r){
+                    System.out.println(i+" "+j);
+                    c++;
+                    break;
+                }
+            }
+        }
+        if(c==0)
+           System.out.println(-1);
+    }
+}
